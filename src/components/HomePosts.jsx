@@ -1,11 +1,12 @@
 
+
 function HomePosts() {
   return (
     <>
      
       <div className="w-full flex mt-8 space-x-4">
         {/* left */}
-        <div className="w-[35%] h-[200px] flex justify-center items-center">
+        <div className="w-[35%] h-[200px] flex justify-center items-center mt-5">
           <img
             className="w-full h-full object-cover rounded"
             src="https://th.bing.com/th?id=ORMS.c846a182b9606bb173d721a0d7050489&pid=Wdp&w=300&h=156&qlt=90&c=1&rs=1&dpr=1.5&p=0"
@@ -34,7 +35,7 @@ function HomePosts() {
           </p>
         </div>
       </div>
- 
+
     </>
   );
 }

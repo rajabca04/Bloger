@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import "swiper/css";
 import { saveAs } from 'file-saver'
 import { IoCloudDownloadOutline } from "react-icons/io5";
-function Swipertext() {
+function Swipertest() {
   const [tinyImg, setTinyImg] = React.useState([]);
   const downloadImage = (img_url,img_name) => {
     saveAs(img_url, img_name) // Put your image URL here.
@@ -45,8 +45,8 @@ function Swipertext() {
 
   return (
     <>
-      <div className="w-full h-full p-10 mt-20 bg-slate-500 ">
-        <h1>Slide me left.</h1>
+      <div className="w-full h-ful">
+        <h1 className="text-3xl text-black mb-2 mt-2">Walpaper | Slide me</h1>
         <Swiper
           spaceBetween={50}
           slidesPerView={4}
@@ -60,13 +60,9 @@ function Swipertext() {
              })
          }
 
-          {/* <span slot="container-start">Container Start</span>
-  <span slot="container-end">Container End</span>
-  <span slot="wrapper-start">Wrapper Start</span>
-  <span slot="wrapper-end">Wrapper End</span> */}
         </Swiper>
       </div>
     </>
   );
 }
-export default Swipertext;
+export default Swipertest;

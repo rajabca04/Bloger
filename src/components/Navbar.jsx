@@ -6,8 +6,6 @@ import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognitio
 function Navbar() {
   const {
     transcript,
-    listening,
-    resetTranscript,
     browserSupportsSpeechRecognition
   } = useSpeechRecognition();
 

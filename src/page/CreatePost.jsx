@@ -52,12 +52,14 @@ function CreatePost() {
             </div>
             {
                 cats?.map((cat,index)=>{
-                    <div key={index} className="flex justify-center items-center space-x-2 mr-4 mg-gray px-2 py-1 rounded-md">
+                    return(
+                        <div key={index} className="flex justify-center items-center space-x-2 mr-4 mg-gray px-2 py-1 rounded-md">
               <p>{cat}</p>
               <p onClick={deleteCategory}   className="cursor-pointer text-sm font-extralight">
                 <ImCross />
               </p>
             </div>
+                    )
                 })
             }
             <textarea
